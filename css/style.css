@@ -689,6 +689,13 @@ Main components
     background-size: cover;
 }
 
+.aboutus-testimonial {
+    position: relative;
+    background:#603132;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 
 .cd-testimonials-wrapper {
     position: relative;
@@ -702,6 +709,7 @@ Main components
     z-index: 1;
   }
 
+
   @media only screen and (min-width: 768px) {
     .cd-testimonials-wrapper {
       margin: 4em auto;
@@ -714,6 +722,15 @@ Main components
     color: #ffffff;
     text-align: center;
   }
+
+.cd-testimonials-wrapper .Client-title h1 {
+padding: 30px 0;
+font-weight: bold;
+color: #ffffff;
+text-align: center;	
+font-size: 48px;
+}
+
   .cd-testimonials::after {
     clear: both;
     content: "";
