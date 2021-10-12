@@ -42,5 +42,21 @@ $(document).ready(function() {
 			});
 		}
 	});
+	
+//  Image Carousel
+
+    if ($('.owl-carousel').length > 0) {
+        $(".testimonials-carousel").owlCarousel({
+            items:1,
+            responsiveBaseWidth: ".aboutus-testimonial",
+            pagination: true,
+			nav: true,
+		loop: true,
+		center: true,
+		margin: 0,
+		lazyLoad:true,
+		dots: false
+        });
+    }
 
 })

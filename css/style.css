@@ -696,6 +696,44 @@ Main components
     padding-bottom: 50px;
 }
 
+blockquote {
+    border: none;
+    display: table;
+    margin-bottom: 0;
+    padding: 20px 10%;
+    width: 86%;
+}
+
+blockquote figure .image {
+    max-width: 460px;
+    position: relative;
+  }
+
+blockquote aside{
+	display: flex;
+	
+}
+
+blockquote .cite p {
+    font-size: 15px;
+    line-height: 17px;
+	color: #ffffff;
+}
+
+blockquote .cite {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+.Client-title h1 {
+padding: 30px 0;
+font-weight: bold;
+color: #ffffff;
+text-align: center;	
+font-size: 48px;
+}
+
 
 .cd-testimonials-wrapper {
     position: relative;
@@ -723,13 +761,7 @@ Main components
     text-align: center;
   }
 
-.cd-testimonials-wrapper .Client-title h1 {
-padding: 30px 0;
-font-weight: bold;
-color: #ffffff;
-text-align: center;	
-font-size: 48px;
-}
+
 
   .cd-testimonials::after {
     clear: both;
