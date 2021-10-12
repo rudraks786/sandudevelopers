@@ -104,6 +104,19 @@ figure.banner img {
     display: block;
 }
 
+figure.about-banner figcaption {
+    position: absolute;
+    top: 288px;
+    left: 300px;
+    font-size: 75px;
+    color: #603132;
+}
+
+figure.about-banner img {
+    width: 100%;
+    display: block;
+}
+
 .intro {
     background: #fff2e8;
     padding: 100px;
@@ -133,8 +146,6 @@ figure.banner img {
     position: relative;
     padding-bottom: 10px;
 }
-
-
 
 .intro--title h1:after {
     content: "";
@@ -180,7 +191,22 @@ figure.banner img {
     flex: 0 0 calc(50% - 100px);
 }
 
+.aboutus-intro--left {
+    padding: 0;
+    flex: 0 0 calc(50% - 100px);
+}
+
+.aboutus-intro--left2 {
+	padding-left: 70px;
+    flex: 0 0 calc(46% - 100px);
+}
+
 .intro--right {
+    flex: 1;
+}
+
+.aboutus-intro--right {
+	padding: 0 50px;	
     flex: 1;
 }
 
@@ -813,3 +839,53 @@ Main components
       background-color: #ffffff;
     }
   }
+
+.Row{
+	width: 85%;
+    margin: 0 10%;
+}
+
+.box {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 10px;
+    width: 100%;
+    border-spacing: 10px;
+    padding: 120px 0px;
+}
+.Column {
+    flex: 0.2 auto;
+    padding: 0 30px;
+}
+
+.media {
+    display: block;
+}
+
+.media-service, .media-service-1 {
+    padding: 0 30px;
+    text-align: center;
+}
+
+section {
+    display: block;
+	background: #fff2e8;
+}
+.media-service .media__img {
+    margin-bottom: 40px;
+}
+
+.media-service .media__title {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.title {
+padding: 30px 0;
+font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+}
