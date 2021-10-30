@@ -127,9 +127,31 @@ figure.about-banner img {
     display: flex;
 }
 
+.intro-new {
+    padding: 60px;
+    display: flex;
+}
+
+.intro-about {
+    background: #fff2e8;
+    padding: 0px;
+    display: flex;
+}
+
+.intro-about2 {
+    background: #602f2d;
+    padding: 0px;
+    display: flex;
+}
+
+.intro-box {
+    background: #602f2d;
+    padding: 0px;
+    display: flex;
+	justify-content: center;
+}
+
 .intro--with-image {
-    padding: 0;
-    align-items: center;
     justify-content: center;
 }
 
@@ -140,10 +162,39 @@ figure.about-banner img {
     font-weight: normal;
     /*flex: 0 0 30%;*/
 	padding-left: 100px;
-    background: #f6f2ec;	
+    /*background: #f6f2ec;*/	
 }
 
-.intro--title_new {
+.intro--title-brown {
+    font-size: 38px;
+    line-height: 100px;
+    color: #603132;
+    font-weight: normal;
+    /*flex: 0 0 30%;*/
+    /*background: #f6f2ec;*/	
+}
+
+.intro--title-white {
+    font-size: 38px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: normal;
+    /*flex: 0 0 30%;*/
+	padding: 142px 76px 0 352px;
+    /*background: #f6f2ec;*/	
+}
+
+.intro--title-new {
+    font-size: 38px;
+    line-height: 100px;
+    color: #603132;
+    font-weight: normal;
+    /*flex: 0 0 30%;*/
+/*    background: #f6f2ec;*/
+	text-align: center;
+}
+
+.intro--title_bc {
     font-size: 38px;
     line-height: 100px;
     color: #603132;
@@ -168,6 +219,22 @@ figure.about-banner img {
     margin-bottom: 45px;
 }
 
+.intro--title-brown h1 {
+    position: relative;
+}
+
+.intro--title-brown h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	top:70px;
+    width: 70px;
+    height: 3px;
+    background: #603132;
+}
+
+
 .intro--title h1 {
     position: relative;
     padding-bottom: 10px;
@@ -178,10 +245,37 @@ figure.about-banner img {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 130px;
-    height: 10px;
+    top: 70px;
+    width: 66px;
+    height: 5px;
     background: #603132;
 }
+
+.intro--title-white h3 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.intro--title-white h3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	top:39px;	
+    width: 70px;
+    height: 3px;
+    background: #fff;
+}
+
+.white-txt{
+color:#fff;
+}
+
+.brown-section{
+	background: #603132;
+	padding: 50px 0;
+}
+
 
 .intro--description {
     flex: 0 0 calc(70% - 100px);
@@ -232,13 +326,14 @@ figure.about-banner img {
 }
 
 .aboutus-intro--right {
-	padding: 0 50px;	
+	padding: 131px 50px;	
     flex: 1;
+
 }
 
 .intro--image img {
     width: 100%;
-    display: block;
+    display: block;		
 }
 
 .o-grid {
@@ -342,10 +437,39 @@ padding: 100px 0;
     background-size: cover;
 }
 
+.cover-tile-image {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.cover-tile-text {
+    padding-left: 5px;
+}
+
+.columns{ 
+	float:left;
+    display:inline-block;
+    width:120px;
+    height:110px;
+    }
+
+.columns2{ 
+	float:left;
+    display:inline-block;
+    width:204px;
+    height:110px;
+	color: #fff;
+    }
+
 #section-2 {
-    background:url(../images/projects-bg.jpg) no-repeat;
+    background:url("../images/projects-bg.jpg") no-repeat;
     background-size: cover;
-    padding: 100px 0;
+	padding: 100px 0;
+}
+
+#section-3 {
+    background:url("../images/projects-bg-new.jpg") no-repeat;
+    background-size: cover;
 }
 
 .m-project--title {
@@ -854,209 +978,46 @@ blockquote .cite {
     padding-left: 30px;
 }
 
+
 .Client-title h1 {
-padding: 30px 0;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.Client-title h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 82px;
+    width: 158px;
+    height: 5px;
+    background: #fff;
+}
+.Client-title {
+padding: 30px 438px;
 font-weight: bold;
 color: #ffffff;
-text-align: center;	
+text-align:left;	
 font-size: 48px;
 }
 
+.image{
+	width: 88%;
+	height: auto;
+}
 
-.cd-testimonials-wrapper {
-    position: relative;
-    width: 90%;
-    max-width: 768px;
-    background-color:transparent;
-    margin: 2em auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding: 20px 40px;
-    z-index: 1;
-  }
-
-
-  @media only screen and (min-width: 768px) {
-    .cd-testimonials-wrapper {
-      margin: 4em auto;
-      padding: 64px 50px 114px;
-    }
-  }
-
+.padding-video{
+padding: 50px 0;	
+}
   
-  .cd-testimonials {
-    color: #ffffff;
-    text-align: center;
-  }
-
-
-
-  .cd-testimonials::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  .cd-testimonials > li {
-    position: absolute;
-    opacity: 0;
-  }
-  .cd-testimonials > li:first-child {
-    position: relative;
-    opacity: 1;
-  }
-  .cd-testimonials h3 {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.4;
-	font-size: 24px;
-    font-weight: bold;	  
-    padding: 0 14px;
-  }
-
-  .cd-testimonials div {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.4;
-	font-size: 18px;
-    font-weight: normal;	  
-    padding: 0 14px;
-  }
-  @media only screen and (min-width: 768px) {
-    .cd-testimonials  {
-      font-size: 22px;
-      font-size: 1.375rem;
-    }
-  }
-  @media only screen and (min-width: 1170px) {
-    .cd-testimonials  {
-      font-size: 26px;
-      font-size: 1.625rem;
-      line-height: 1.6;
-    }
-  }
-  
-
-  
-  .flex-direction-nav li {
-    position: absolute;
-    height: 100%;
-    width: 40px;
-    top: 0;
-  }
-  .flex-direction-nav li:first-child {
-    left: 0;
-  }
-  .flex-direction-nav li:last-child {
-    right: 0;
-  }
-  .flex-direction-nav li a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    /* image replacement */
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-  }
-  .no-touch .flex-direction-nav li a:hover {
-    background-color: #323234;
-  }
-  .flex-direction-nav li a::before, .flex-direction-nav li a::after {
-    /* left and right arrows in css only */
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 2px;
-    height: 13px;
-    background-color: #ffffff;
-  }
-  .flex-direction-nav li a::before {
-    -webkit-transform: translateY(-35px) rotate(45deg);
-    -moz-transform: translateY(-35px) rotate(45deg);
-    -ms-transform: translateY(-35px) rotate(45deg);
-    -o-transform: translateY(-35px) rotate(45deg);
-    transform: translateY(-35px) rotate(45deg);
-  }
-  .flex-direction-nav li a::after {
-    -webkit-transform: translateY(-27px) rotate(-45deg);
-    -moz-transform: translateY(-27px) rotate(-45deg);
-    -ms-transform: translateY(-27px) rotate(-45deg);
-    -o-transform: translateY(-27px) rotate(-45deg);
-    transform: translateY(-27px) rotate(-45deg);
-  }
-  .flex-direction-nav li:last-child a::before {
-    -webkit-transform: translateY(-35px) rotate(-45deg);
-    -moz-transform: translateY(-35px) rotate(-45deg);
-    -ms-transform: translateY(-35px) rotate(-45deg);
-    -o-transform: translateY(-35px) rotate(-45deg);
-    transform: translateY(-35px) rotate(-45deg);
-  }
-  .flex-direction-nav li:last-child a::after {
-    -webkit-transform: translateY(-27px) rotate(45deg);
-    -moz-transform: translateY(-27px) rotate(45deg);
-    -ms-transform: translateY(-27px) rotate(45deg);
-    -o-transform: translateY(-27px) rotate(45deg);
-    transform: translateY(-27px) rotate(45deg);
-  }
-  @media only screen and (min-width: 768px) {
-    .flex-direction-nav li {
-      width: 50px;
-    }
-  }
-  @media only screen and (min-width: 1170px) {
-    .flex-direction-nav li a::before, .flex-direction-nav li a::after {
-      background-color: #5e5e63;
-      -webkit-transition: background-color 0.2s;
-      -moz-transition: background-color 0.2s;
-      transition: background-color 0.2s;
-    }
-    .flex-direction-nav li a:hover::before, .flex-direction-nav li a:hover::after {
-      background-color: #ffffff;
-    }
-  }
-
+ 
 .Row{
 	width: 85%;
     margin: 0 10%;
 }
 
-.box {
-	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    row-gap: 10px;
-    width: 100%;
-    border-spacing: 10px;
-    padding: 120px 0px;
-}
-.Column {
-    flex: 0.2 auto;
-    padding: 0 30px;
-}
 
-.media {
-    display: block;
-}
-
-.media-service, .media-service-1 {
-    padding: 0 30px;
-    text-align: center;
-}
-
-section {
-    display: block;
-	background: #fff2e8;
-}
-.media-service .media__img {
-    margin-bottom: 40px;
-}
-
-.media-service .media__title {
-    position: relative;
-    margin-bottom: 10px;
-}
 
 .title {
 padding: 30px 0;
