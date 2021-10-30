@@ -28,35 +28,58 @@ $(document).ready(function() {
             element.scrollIntoView({behavior: "smooth"});
         })
     })
-
-    $('.cd-testimonials-wrapper').flexslider({
-		selector: ".cd-testimonials > li",
-		animation: "slide",
-		controlNav: false,
-		slideshow: false,
-		smoothHeight: true,
-		start: function(){
-			$('.cd-testimonials').children('li').css({
-				'opacity': 1,
-				'position': 'relative'
-			});
-		}
-	});
 	
-//  Image Carousel
+	  $('nav ul li').click(function(){
+    $('nav ul li').removeClass("active");
+    $(this).addClass("active");
+});
+	
+    $('.o-slider').bxSlider({
+        pager: false,
+    });
 
-    if ($('.owl-carousel').length > 0) {
-        $(".testimonials-carousel").owlCarousel({
-            items:1,
-            responsiveBaseWidth: ".aboutus-testimonial",
-            pagination: true,
-			nav: true,
-		loop: true,
-		center: true,
-		margin: 0,
-		lazyLoad:true,
-		dots: false
-        });
+  $('.owl-carousel').owlCarousel({
+    nav: false,
+	dots: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+	margin: 20,
+	slideSpeed: 3000,
+	animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    responsive: {
+        0:{
+            items: 1
+        },
+        600:{
+            items: 2
+        },
+		960: {
+			items: 3
+		}
     }
+});
+	
+	
+	
+
+var setMinHeight = function(minheight = 0) {
+  jQuery('.owl-carousel').each(function(i,e){
+    var oldminheight = minheight;
+    jQuery(e).find('.owl-item').each(function(i,e){
+      minheight = jQuery(e).height() > minheight ? jQuery(e).height() : minheight;    
+    });
+    jQuery(e).find('.item').css("min-height",minheight + "px");
+    minheight = oldminheight;
+  });
+};
+
+	setMinHeight();
+
+
+$(document).on('resize', function(){
+		setMinHeight();
+});
 
 })
