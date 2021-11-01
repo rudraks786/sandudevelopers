@@ -462,8 +462,9 @@ padding: 100px 0;
     }
 
 #section-2 {
-    background:url("../images/projects-bg.jpg") no-repeat;
-    background-size: cover;
+   /* background:url("../images/projects-bg.jpg") no-repeat;
+    background-size: cover;*/
+	background: #602f2d;
 	padding: 100px 0;
 }
 
